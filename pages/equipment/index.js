@@ -23,6 +23,7 @@ const servicesPage = () => {
             src="/Pool_pic_5.jpg" 
             width={800}
             height={600}
+            alt='hero'
           />
         </section>
         <section className="page-body">

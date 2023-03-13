@@ -23,6 +23,7 @@ const chemsPage = () => {
             src="/Pool_pic_1.jpg" 
             width={800}
             height={600}
+            alt='hero'
           />
         </section>
         <section className="page-body">
@@ -45,6 +46,7 @@ const chemsPage = () => {
                 src='/Pool_pic_3.jpg'
                 height={200}
                 width={200}
+                alt='hero1'
               />
             </section>
           </article>

@@ -42,6 +42,7 @@ export default function Home() {
             controls={false}
             width={800}
             height={600}
+            
           />
         </section>
         <section className="page-body">
