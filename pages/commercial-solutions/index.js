@@ -28,8 +28,8 @@ const servicesPage = () => {
         </section>
         <section className="page-body">
           <article className='page-body-content'>
-            <div className='page-txt'>At the Pool Dude, we don't just focus on residential pools.</div>
-            <div className='page-txt'>We're also experts at maintaining commercial pools, as well as troubleshooting issues and upgrading commercial equipment.</div>
+            <div className='page-txt'>At the Pool Dude, we don&apos;t just focus on residential pools.</div>
+            <div className='page-txt'>We&apos;re also experts at maintaining commercial pools, as well as troubleshooting issues and upgrading commercial equipment.</div>
             <div className='page-txt'>Whether you need dosing, filtration or heating solutions or you require periodic chlorine deliveries, The Pool Dude has what you need to keep your commercial pool running properly.</div>
           </article>
           <ContactForm isSideNav={true} id="contact-form" />

@@ -30,7 +30,7 @@ const servicesPage = () => {
           <article className='page-body-content'>
             <div className='page-txt'>Is your chlorinator not producing?</div>
             <div className='page-txt'>Maybe your filter cartridge is old and needs replacing.</div>
-            <div className='page-txt'>Or possibly you're looking at various heating options?</div>
+            <div className='page-txt'>Or possibly you&apos;re looking at various heating options?</div>
             <div className='page-txt'>Perhaps you just have a broken skimmer basket?</div>
             <div className='page-txt'>We are experts in troubleshooting problems and we can supply and install solutions both big and small for almost any issue you may have.</div>
             <div className='page-txt'>Unlike most big franchises, we are able to shop around with our many suppliers to find better prices, better brands and items that are a guaranteed fit for your desired application.</div>

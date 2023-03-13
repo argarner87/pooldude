@@ -29,7 +29,7 @@ const chemsPage = () => {
         <section className="page-body">
           <article className='page-body-content'>
             <div className='page-txt'>Sick of spending hundreds each month at a pool shop?</div>
-            <div className='page-txt'>Or perhaps you're worried about adulterating your pool with cheap rubbish from the local hardware store?</div>
+            <div className='page-txt'>Or perhaps you&apos;re worried about adulterating your pool with cheap rubbish from the local hardware store?</div>
             <div className='page-txt'>We stock and supply a wide range of only the best quality chemicals and additives for your pool.</div>
             <h2 className='page-heading2'>Our Chemicals...</h2>
             <ul className="page-list">
@@ -46,7 +46,7 @@ const chemsPage = () => {
                 src='/Pool_pic_3.jpg'
                 height={200}
                 width={200}
-                alt='hero1'
+                alt=''
               />
             </section>
           </article>

@@ -23,6 +23,7 @@ const greenPoolCleanupPage = () => {
             src="/Pool_pic_2.jpg" 
             width={800}
             height={600}
+            alt='hero'
           />
         </section>
         <section className="page-body">
@@ -37,18 +38,21 @@ const greenPoolCleanupPage = () => {
                 src='/Pool_pic_3.jpg'
                 height={200}
                 width={200}
+                alt=''
               />
               <Image 
                 className="page-img"
                 src='/Pool_pic_4.jpg'
                 height={200}
                 width={200}
+                alt=''
               />
               <Image 
                 className="page-img"
                 src='/Pool_pic_5.jpg'
                 height={200}
                 width={200}
+                alt=''
               />
             </section>
           </article>
