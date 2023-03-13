@@ -39,6 +39,7 @@ const ContactForm = ({ isSideNav }) => {
 
   return (
     <div className={isSideNav ? 'contact-form-side' : 'contact-form-fullpg'}>
+      <h1 className="page-heading1">Contact Us!</h1>
       <form onSubmit={sendEmail}>
         <ul>
           <li>

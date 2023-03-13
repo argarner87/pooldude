@@ -49,10 +49,7 @@ export default function Home() {
             <h1 className='page-heading1'>Stuff We Do:</h1>
             <ItemGrid />
           </article>
-          <article>
-            <h1 className="page-heading1">Contact Us!</h1>
-            <ContactForm isSideNav={true} id="contact-form" />
-          </article>
+          <ContactForm isSideNav={true} id="contact-form" />
         </section>
 
       </Layout>

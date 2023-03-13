@@ -8,7 +8,7 @@ const ItemGrid = () => {
     <section className='item-grid'>
         <GridItem 
             imgSrc='/Pool_pic_1.jpg' 
-            caption="Regular Pool Maintenance" 
+            caption="Pool Cleaning & Maintenance" 
             linkTo='/regular-maintenance' 
         />
         <GridItem 
@@ -18,8 +18,8 @@ const ItemGrid = () => {
         />
         <GridItem 
             imgSrc='/Pool_pic_3.jpg' 
-            caption="One-off Pool Services" 
-            linkTo='/infrequent-services' 
+            caption="Commercial Pool Solutions" 
+            linkTo='/commercial-solutions' 
         />
         <GridItem 
             imgSrc='/Pool_pic_4.jpg' 

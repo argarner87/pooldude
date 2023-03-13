@@ -13,8 +13,8 @@ const Menu = (menuIsOpen) => {
                   <li className='header-menu-item'>Green Pool Recovery</li>
                 </Link>
                 
-                <Link style={{textDecoration: 'none'}} href='/infrequent-services'>
-                  <li className='header-menu-item'>One-Off Servicing</li>
+                <Link style={{textDecoration: 'none'}} href='/commercial-solutions'>
+                  <li className='header-menu-item'>Commercial Pool Solutions</li>
                 </Link>
                 
                 <Link style={{textDecoration: 'none'}} href='/equipment'>
