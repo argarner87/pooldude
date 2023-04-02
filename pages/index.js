@@ -15,26 +15,26 @@ export default function Home() {
         <title>The Pool Dude</title>
         <meta name="description" content="Best friggin pool guys in the world" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/public/favicon.ico" />
+        <link rel="icon" href="/PDPL.ico" />
       </Head>
 
       <Layout>
         <section className='hero'>
-          <h1 className='page-title'>
-            Professional <br /><br /> Reliable <br /><br /> Affordable
-            <br />
-            <br />
-            <br />
-            <br />
-            <span className="no-wrap">Pool Care</span>
-            <br /><br />
-            <span className="no-wrap">Done Your Way</span>
-          </h1>
+          <div className="hero-txt">
+            <h1 className='page-title'>
+              Professional <br /> Reliable <br /> Affordable
+            </h1>
+            <h1 className="page-title">
+              <span className="no-wrap">Pool Care</span>
+              <br />
+              <span className="no-wrap">Done Your Way</span>
+            </h1>            
+          </div>
           <video 
             className='homepg-hero-video hero-video'
             layout="fill"
-            objectFit="cover"
-            objectPosition="center"
+            // objectFit="cover"
+            // objectPosition="center"
             autoPlay 
             loop 
             muted={true} 
@@ -50,8 +50,8 @@ export default function Home() {
             <h1 className='page-heading1'>Stuff We Do:</h1>
             <ItemGrid />
           </article>
-          <ContactForm isSideNav={true} id="contact-form" />
         </section>
+          <ContactForm isSideNav={true} id="contact-form" />
 
       </Layout>
     </>

@@ -143,7 +143,6 @@ const servicesPage = () => {
             </section>
           </article>
           <article>
-            <h1 className="page-heading1">Contact Us!</h1>
             <ContactForm isSideNav={true} id="contact-form" />
           </article>
         </section>

@@ -24,48 +24,48 @@ const Layout = ({ children }) => {
         <Head>
 
         </Head>
-        <header className='header'>
-          <div className="header-logobar">
-            <Link style={{textDecoration: 'none'}} href='/'>
-              <h1 className="header-logo">Pool Dude</h1>
-            </Link>
-            <button className="menu-button" onClick={handleMenu}>
-              <div className={menuIsOpen ? "menu-icon_open" : "menu-icon"} />
-            </button>
-            {/* <FontAwesomeIcon
-              icon={faBars} 
-              className='header-menuicon' 
-              onClick={handleMenu}
-            /> */}
-          </div>
-            {/* <nav className="header-nav">
-              <div className="header-nav-button">
-                <p className="header-nav-button-txt">Contact us</p> 
-              </div>
-              <div className="header-nav-button">
-                <p className="header-nav-button-txt">Staff Login</p> 
-              </div>
-            </nav> */}
+        {/* <body> */}
+          <header className='header'>
+            <div className="header-logobar">
+              <Link style={{textDecoration: 'none'}} href='/'>
+                <h1 className="header-logo">Pool Dude</h1>
+              </Link>
+              <button className="menu-button" onClick={handleMenu}>
+                <div className={menuIsOpen ? "menu-icon_open" : "menu-icon"} />
+              </button>
+            </div>
             <nav className="button-nav">
-              <button className="nav-button nav-button_1">
-                1800 POOLS 1
-              </button>
-              <button className="nav-button nav-button_2">
-                Message Us
-              </button>
+              <Link 
+                className="nav-button-container" 
+                style={{textDecoration: 'none'}} 
+                href={'tel:1800766571'}
+              >
+                <button className="nav-button nav-button_1">
+                  1800 POOLS 1
+                </button>
+              </Link>
+              <Link 
+                className="nav-button-container" 
+                style={{textDecoration: 'none'}} 
+                href={'/contact-us'}
+              >
+                <button className="nav-button nav-button_2">
+                  Message Us
+                </button>
+              </Link>
             </nav>
-        </header>
-        <main>
-            {menuIsOpen && <Menu  className={menuIsOpen ? "header-menu" : "header-menu_closed"} />}
-            {/* <Menu isOpen={menuIsOpen} /> */}
-            {children}
-        </main>
-        <footer className="footer">
-            <p className="footer-smalltext">
-              &copy; 2023 The Pool Dude Pty Ltd.
-              <br />Website by Anthony Garner
-            </p>
-        </footer>
+          </header>
+          <main>
+              {menuIsOpen && <Menu className={menuIsOpen ? "header-menu" : "header-menu_closed"} />}
+              {children}
+          </main>
+          <footer className="footer">
+              <p className="footer-smalltext">
+                &copy; 2023 The Pool Dude Pty Ltd.
+                <br />Website by Anthony Garner
+              </p>
+          </footer>
+        {/* </body> */}
     </div>
   )
 }

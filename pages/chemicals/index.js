@@ -10,7 +10,7 @@ const chemsPage = () => {
         <title>Pool Chemicals - The Pool Dude</title>
         <meta name="description" content="Best friggin pool guys in the world" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/PDPL.ico" />
       </Head>
       
       <Layout>
