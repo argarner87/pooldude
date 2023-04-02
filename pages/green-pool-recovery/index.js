@@ -2,6 +2,7 @@ import Layout from "@/components/layout"
 import Head from "next/head"
 import Image from "next/image"
 import ContactForm from "@/components/contactForm"
+import GridItem from "@/components/gridItem"
 
 const greenPoolCleanupPage = () => {
   return (
@@ -33,27 +34,31 @@ const greenPoolCleanupPage = () => {
             <div className='page-txt'>Our minimum-chemical, tried-and-true approach to green pool recovery will ensure the best result, at a very competitative cost and in a timely manner.</div>
             <section className="subsection">
               <h1 className='page-heading1'>Some of Our Work...</h1>
+              <div className="item-grid">
               <Image 
-                className="page-img"
-                src='/Pool_pic_3.jpg'
+                className="page-img grid-item"
+                src='/Before_after_1.png'
                 height={200}
                 width={200}
                 alt=''
               />
               <Image 
-                className="page-img"
-                src='/Pool_pic_4.jpg'
+                className="page-img grid-item"
+                src='/Before_after_2.png'
                 height={200}
                 width={200}
                 alt=''
               />
               <Image 
-                className="page-img"
-                src='/Pool_pic_5.jpg'
+                className="page-img grid-item"
+                src='/Before_after_3.png'
                 height={200}
                 width={200}
                 alt=''
               />
+              {/* <GridItem /> */}
+
+              </div>
             </section>
           </article>
           <ContactForm isSideNav={true} id="contact-form" />
