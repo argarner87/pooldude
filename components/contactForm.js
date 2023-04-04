@@ -3,11 +3,11 @@ import emailjs from '@emailjs/browser'
 
 const ContactForm = ({ isSideNav }) => {
 
-  const [name, setName] = useState('')
-  const [email, setEmail] = useState('')
-  const [postcode, setPostcode] = useState('')
-  const [message, setMessage] = useState('')
-  const [submitted, setSubmitted] = useState(false)
+  const [ name, setName ] = useState('')
+  const [ email, setEmail ] = useState('')
+  const [ postcode, setPostcode ] = useState('')
+  const [ message, setMessage ] = useState('')
+  const [ submitted, setSubmitted ] = useState(false)
 
   const sendEmail = (e) => {
     e.preventDefault()
@@ -16,7 +16,7 @@ const ContactForm = ({ isSideNav }) => {
       from_name: name,
       email: email,
       postcode: postcode,
-      message: message 
+      message: message
     }
 
     emailjs
@@ -38,58 +38,61 @@ const ContactForm = ({ isSideNav }) => {
   }
 
   return (
-    <div className={isSideNav ? 'contact-form-side' : 'contact-form-fullpg'}>
-      <p className="page-heading1">Contact Us!</p>
+    <div className={isSideNav ? "contact-form-side" : "contact-form-fullpg"}>
       <form onSubmit={sendEmail}>
         <ul>
           <li>
-            <input 
-              type="text" 
-              name='name' 
-              placeholder='Name' 
-              required  
-              onChange={(e) => {setName(e.target.value)}}
-            />
-          </li>
-          <li>
+            <label>Name:</label>
             <input
-              type="email" 
-              name='email' 
-              placeholder='Email' 
-              required 
-              onChange={(e) => {setEmail(e.target.value)}} 
+              type="text"
+              name="name"
+              required
+              onChange={(e) => {
+                setName(e.target.value);
+              }}
             />
           </li>
           <li>
-            <input 
-              type="number" 
-              name='postcode' 
-              placeholder='Postcode' 
+            <label>Email:</label>
+            <input
+              type="email"
+              name="email"
+              required
+              onChange={(e) => {
+                setEmail(e.target.value);
+              }}
+            />
+          </li>
+          <li>
+            <label>Postcode:</label>
+            <input
+              type="number"
+              name="postcode"
               min={3000}
               max={3999}
-              required  
-              onChange={(e) => {setPostcode(e.target.value)}}
+              required
+              onChange={(e) => {
+                setPostcode(e.target.value);
+              }}
             />
           </li>
           <li>
-            <textarea 
-              name='message' 
-              placeholder='Message' 
-              required  
-              onChange={(e) => {setMessage(e.target.value)}}
+            <label>Message:</label>
+            <textarea
+              name="message"
+              required
+              onChange={(e) => {
+                setMessage(e.target.value);
+              }}
             />
           </li>
           <li>
-            <input 
-              className={isSideNav ? 'button-side' : 'button-fullpg'}
-              type="submit" 
-              value='SEND'  
-            />
+            <input className="button-side" type="submit" value="Send" />
           </li>
         </ul>
       </form>
     </div>
-  )
+  );
 }
 
 export default ContactForm

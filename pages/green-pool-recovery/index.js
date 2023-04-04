@@ -2,7 +2,6 @@ import Layout from "@/components/layout"
 import Head from "next/head"
 import Image from "next/image"
 import ContactForm from "@/components/contactForm"
-import GridItem from "@/components/gridItem"
 
 const greenPoolCleanupPage = () => {
   return (
@@ -35,29 +34,27 @@ const greenPoolCleanupPage = () => {
             <section className="subsection">
               <h1 className='page-heading1'>Some of Our Work...</h1>
               <div className="item-grid">
-              <Image 
-                className="page-img grid-item"
-                src='/Before_after_1.png'
-                height={200}
-                width={200}
-                alt=''
-              />
-              <Image 
-                className="page-img grid-item"
-                src='/Before_after_2.png'
-                height={200}
-                width={200}
-                alt=''
-              />
-              <Image 
-                className="page-img grid-item"
-                src='/Before_after_3.png'
-                height={200}
-                width={200}
-                alt=''
-              />
-              {/* <GridItem /> */}
-
+                <Image 
+                  className="page-img grid-item"
+                  src='/Before_after_1.png'
+                  height={200}
+                  width={200}
+                  alt=''
+                />
+                <Image 
+                  className="page-img grid-item"
+                  src='/Before_after_2.png'
+                  height={200}
+                  width={200}
+                  alt=''
+                />
+                <Image 
+                  className="page-img grid-item"
+                  src='/Before_after_3.png'
+                  height={200}
+                  width={200}
+                  alt=''
+                />
               </div>
             </section>
           </article>
