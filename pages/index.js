@@ -5,6 +5,7 @@ import Link from 'next/link'
 import Layout from '@/components/layout'
 import ContactForm from '@/components/contactForm'
 import ItemGrid from '@/components/itemGrid'
+import Carousel from '@/components/carousel'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -51,6 +52,54 @@ export default function Home() {
           <article className="page-body-content">
             <h1 className="page-heading1">Stuff We Do:</h1>
             <ItemGrid />
+          </article>
+          <article className="carousel-container">
+            <h1 className="page-heading1">Our Partners</h1>
+            <Carousel className="carousel">
+              <div className="keen-slider__slide slide-1">
+                <Image
+                  className="slider-img"
+                  src="/interquad_logo.jpg"
+                  width={500}
+                  height={100}
+                />
+              </div>
+              <div className="keen-slider__slide slide-2">
+                <Image
+                  className="slider-img"
+                  src="/waterco_logo.png"
+                  width={500}
+                  height={100}
+                />
+              </div>
+              <div className="keen-slider__slide slide-3">
+                {" "}
+                <Image
+                  className="slider-img"
+                  src="/fluidra_logo.png"
+                  width={500}
+                  height={100}
+                />
+              </div>
+              <div className="keen-slider__slide slide-4">
+                {" "}
+                <Image
+                  className="slider-img"
+                  src="/spa-electrics_logo.png"
+                  width={500}
+                  height={100}
+                />
+              </div>
+              <div className="keen-slider__slide slide-5">
+                {" "}
+                <Image
+                  className="slider-img"
+                  src="/maytronics_logo.png"
+                  width={500}
+                  height={100}
+                />
+              </div>
+            </Carousel>
           </article>
         </section>
         <section className="contact-form-container">
